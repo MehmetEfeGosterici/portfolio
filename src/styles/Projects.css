@@ -1,0 +1,15 @@
+.Projects{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.Project-container{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+
+}

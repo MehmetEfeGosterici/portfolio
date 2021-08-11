@@ -1,0 +1,25 @@
+.Footer{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    height:30vh;
+    background-color: #1f1f1f;
+    z-index: 10;
+    width: 100%;
+    margin-top: 20px;
+    
+    
+}
+
+.Footer-container{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70vw;
+}
+
+.Footer-container>ul{
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
