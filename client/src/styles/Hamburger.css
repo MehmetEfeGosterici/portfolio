@@ -1,0 +1,10 @@
+
+
+.burger>li{
+    height:5px;
+    margin:7px;
+    width: 2.5rem;
+    border-radius: 10px;
+    background-color: white;
+    list-style: none;
+}

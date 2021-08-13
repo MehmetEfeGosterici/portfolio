@@ -1,4 +1,5 @@
 express = require("express");
+mongoose = require("mongoose")
 router = require("./router")
 cors = require("cors");
 app = express();
@@ -12,6 +13,11 @@ app.use("/api",router);
 app.get("/",(req,res)=>{
     res.json("success")
 })
+
+mongoose.connect(process.env.DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => console.log('MongoDB Connected...')).catch(err => console.log(err));
 
 app.listen(port,()=>{
     console.log(`Listening at ${port}`);

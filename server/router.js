@@ -1,6 +1,7 @@
 require("dotenv/config")
 express = require("express");
 nodemailer = require("nodemailer")
+const Data = require("./models/model")
 router = express.Router();
 
 router.post("/email", (req,res)=>{
@@ -29,5 +30,11 @@ router.post("/email", (req,res)=>{
         }
       });
 })
+
+router.get("/projects", async (req,res)=>{
+  const data = await Data.find()
+  res.json(data);
+})
+
 
 module.exports = router;

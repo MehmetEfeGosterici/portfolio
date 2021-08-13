@@ -49,14 +49,16 @@ function Contact() {
                     </div>
                     <form onSubmit={sendEmail} className="Contact-form" >
                         <label>Name:</label>
-                        <input onChange={setname} value={name} size="50" />
+                        <input onChange={setname} value={name}  />
                         <br/>
                         <label>E-mail:</label>
                         <input onChange={setemail} value={email}/>
                         <br/>
                         <label>Your message:</label>
                         <textarea onChange={setmessage} value={message} rows="7"/>
-                        <input type="submit" value="Send"/>
+                        <div >
+                            <button className="Contact-form-button" type="submit">Send</button>
+                        </div>
                     </form>
                 </div>
 

@@ -7,15 +7,16 @@
     height: 10vh;
     box-shadow: 0px 5px 20px 5px  #242424;
     justify-content: center;
+    z-index: 2;
 }
 
 .Container{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    display: flex;
     justify-content: space-around;
     width: 90vw;
     
 }
+
 
 .Container-header{
     display: flex;
@@ -26,9 +27,10 @@
 }
 
 .Container-header>img{
-    width: 9%;
-    height: 9%;
-    margin-left: 50px;
+    position: absolute;
+    top:0;
+    width:40px;
+    margin: 10px 0px 0px 30px;
 }
 
 .Container-items{
@@ -39,7 +41,94 @@
 
 .Container-items>li{
     list-style:none;
-    padding: 20px;
+    padding: 10px 30px;
+    margin:10px;
     color:white;
     font-size: 24px;
+}
+.Container-items>li::after{
+    content: '';
+    display: block;
+    transform: scaleX(0);
+    border-bottom: 3px solid white;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.Container-items>li:hover::after{
+    transform: scaleX(1);
+    
+}
+
+.Container-items-bg{
+    position: absolute;
+    right:0;
+    top:10vh;
+    width:100%;
+    height:100vh;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.Container-itemsburger{
+    display: flex;
+    position: absolute;
+    top:10vh;
+    right:0;
+    flex-direction: column;
+    background-color: #131313;
+    list-style: none;
+    width: 70%;
+    align-items: center;
+    padding:20px 0px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.Container-itemsburger>li{
+    text-align: left;
+    color:white;
+    font-size: 24px;
+    padding: 30px;
+    border-bottom: 2px solid grey;
+    border-radius: 5px;
+}
+.Container-itemsburger>li:hover{
+    background-color: #242424;
+    transition: background-color 0.2s ease-in;
+}
+.Container-itemsburger>li:last-child{
+    border:none;
+}
+
+.hamburger{
+    display:none;
+    margin:15px 0px;
+    transform: rotate(0deg);
+    transition: transform 0.2s cubic-bezier(1, 0.35, 0, 1.29);
+
+
+}
+.hamburgeropen{
+    transform: rotate(90deg);
+    margin:10px 0px;
+    transition: transform 0.2s cubic-bezier(1, 0.35, 0, 1.29);
+}
+
+@media (max-width: 800px){
+    .Container-items{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+        justify-content: flex-end;
+        width:10%;
+    }
+    
+}
+@media (max-width:900px) {
+    .Container-items>li{
+        padding: 10px 10px;
+    }
+    
 }
