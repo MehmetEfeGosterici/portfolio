@@ -8,12 +8,6 @@
     box-shadow: 5px 5px 10px 2px  #242424;;
 }
 
-.Project>img{
-    object-fit:cover;
-    width: 100%;
-    max-height: 30vh;
-}
-
 .Project-text{
     display: flex;
     justify-content: center;
@@ -23,7 +17,6 @@
 }
 
 .Project-text>h3{
-    color:white;
     text-align: center;
     font-size: 1rem;
 }

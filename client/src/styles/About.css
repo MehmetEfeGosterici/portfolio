@@ -1,31 +1,20 @@
-p{
-    font-size: 28px;
-}
-h2{
-    margin-bottom: -15px;
-}
+
 .About-container{
     height: 100vh;
     display:flex;
     align-items: center;
     justify-content: center;
-    z-index: -1;
-    
 }
 
 .About-card{
-    z-index: 1;
     display: flex;
     flex-direction: row;
     width: 90vw;
     align-items: center;
     justify-content: center;
 }
-.About-text{
-    
+.About-text{    
     text-align: center;
-    
-    
 }
 
 .astro{
@@ -50,12 +39,11 @@ h2{
 @media  (max-width:950px) {
     .About-container{
         width: 100%;
-        margin-bottom: 100px;
     }
     .About-card{
         flex-direction: column;
     }
     .astro{
-        margin: -100px 0px -100px 0px;
+        margin-bottom:-60px;
     }
 } 

@@ -12,15 +12,10 @@
     align-items: center;
     justify-content: center;
 }
-
-
-
-
 .Contact-form{
     display: flex;
     flex-direction: column;
     color:white;
-    z-index: 1;
 }
 .Contact-form-icons{
     display: flex;
@@ -31,7 +26,7 @@
     color: white;
 }
 .Contact-form-icon:hover{
-    color:rgb(201, 201, 201);
+    color:rgb(163, 162, 162);
 }
 
 .Contact-form>input{
@@ -59,9 +54,8 @@
     z-index: 1;
 }
 .Contact-form-container>h3{
-    color: white;
     text-align: center;
-    font-size: 22px;
+    font-size:24px;
 }
 
 .Contact-form-button{

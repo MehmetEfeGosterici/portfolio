@@ -8,19 +8,12 @@
 }
 
 .Landing-text{
-    color:white;
     width: 55%;
     margin:0rem 0rem 3rem 3rem;
-    z-index: 1;
 }
 
 .Landing-h3{
     margin-bottom: -10px;
-}
-
-.Landing-p{
-    color:white;
-
 }
 
 @media  (max-width:767px) {

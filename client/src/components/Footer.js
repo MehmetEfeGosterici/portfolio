@@ -18,7 +18,7 @@ function Footer() {
                     <li><a href="mailto:m.efegost558@gmail.com">m.efegost558@gmail.com</a></li>
                 </ul>
             </div>
-            <small>&copy; Copyright {new Date().getFullYear()}, Example Corporation</small>
+            <small>Copyright&copy; {new Date().getFullYear()}, mefegosterici. All Rights Reserved</small>
         </div>
     )
 }
