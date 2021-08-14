@@ -3,6 +3,7 @@ mongoose = require("mongoose")
 router = require("./router")
 cors = require("cors");
 app = express();
+const path = require('path');
 
 port = process.env.PORT || 5000
 
@@ -11,7 +12,7 @@ app.use(express.json())
 app.use("/api",router);
 
 
-app.use(express.static(path.join(__dirname, "../client/build")));
+app.use(express.static(path.join(__dirname, "./")));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
