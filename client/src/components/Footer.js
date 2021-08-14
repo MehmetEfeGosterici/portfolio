@@ -15,7 +15,7 @@ function Footer() {
                     <li><a href="https://www.instagram.com/mehmetefegost/">Instagram</a></li>
                     <li><a href="https://www.linkedin.com/in/mehmet-efe-g%C3%B6sterici-5b15a8173/">Linkedin</a></li>
                     <li><a href="https://github.com/MehmetEfeGosterici">Github</a></li>
-                    <li><a href="mailto:m.efegost558@gmail.com">m.efegost558@gmail.com</a></li>
+                    <li><a href="mailto:m.efegost558@gmail.com"><small>m.efegost558@gmail.com</small></a></li>
                 </ul>
             </div>
             <small>Copyright&copy; {new Date().getFullYear()}, mefegosterici. All Rights Reserved</small>
