@@ -8,11 +8,17 @@ import "../styles/Body.css"
 
 function Body() {
     return (
-        <div className="Body">
-            <Landing/>
-            <About/>
-            <Projects/>
-            <Contact/>
+        <div className="Body" id="home">
+            <Landing />
+            <section id="about">
+                <About/>
+            </section>
+            <section id="projects">
+                <Projects />
+            </section>
+            <section id="contact">
+                <Contact />
+            </section>
             <Footer/>
         </div>
     )

@@ -1,12 +1,15 @@
-import React, { useRef } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber"
+import React from "react";
+import { Canvas} from "@react-three/fiber"
 import "./App.css"
 import Header from "./components/Header";
 import Body from "./components/Body";
+import Landing from "./components/Landing";
+import About from "./components/About"
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import Background from "./components/Background.js";
 import Sphere from "./components/Sphere";
-import { LoadingManager, SphereBufferGeometry, SphereGeometry, TextureLoader } from "three";
-import { OrbitControls } from "@react-three/drei";
 import { Suspense } from "react";
 
 function App() {
