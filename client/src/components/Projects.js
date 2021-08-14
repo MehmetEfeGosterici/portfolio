@@ -23,6 +23,7 @@
 
      return (
          <div className="Projects">
+             <h2 className="Projects-text">PROJECTS</h2>
              <div className="Project-container">
                 {data ? data.map(item=>{
                     return <>
@@ -33,7 +34,7 @@
                         link2={item.link2}
                         />
                     </>
-                }): "No data to display"}
+                }): "Please refresh the page..."}
              </div>
          </div>
      )

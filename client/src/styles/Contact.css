@@ -25,12 +25,13 @@
 .Contact-form-icons{
     display: flex;
     justify-content: space-evenly;
-    margin: 1rem 2rem;
-    color:white;
-    font-size: 200px;
+    margin: 10px 0px;
+}
+.Contact-form-icons>a{
+    color: white;
 }
 .Contact-form-icon:hover{
-    color:purple;
+    color:rgb(201, 201, 201);
 }
 
 .Contact-form>input{

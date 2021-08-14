@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import {Canvas, useFrame} from "@react-three/fiber";
-import {Stars,Sky,Text} from "@react-three/drei";
+import {useFrame} from "@react-three/fiber";
+import {Stars} from "@react-three/drei";
 
 
 const Landing = () => {

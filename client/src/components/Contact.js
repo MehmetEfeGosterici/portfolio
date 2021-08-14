@@ -42,14 +42,22 @@ function Contact() {
                 <div className="Contact-form-container">
                     <h3>Contact Me</h3>
                     <div className="Contact-form-icons">
-                        <GitHubIcon className="Contact-form-icon" fontSize="large" />
-                        <LinkedInIcon className="Contact-form-icon" fontSize="large"/>
-                        <InstagramIcon className="Contact-form-icon" fontSize="large"/>
-                        <MailOutlineIcon className="Contact-form-icon" fontSize="large"/>
+                        <a href="https://github.com/MehmetEfeGosterici" target="_blank">
+                            <GitHubIcon className="Contact-form-icon" fontSize="large" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/mehmet-efe-g%C3%B6sterici-5b15a8173/" target="_blank">
+                            <LinkedInIcon className="Contact-form-icon" fontSize="large"/>
+                        </a>
+                        <a href="https://www.instagram.com/mehmetefegost/" target="_blank">
+                            <InstagramIcon className="Contact-form-icon" fontSize="large"/>
+                        </a>
+                        <a href="mailto:m.efegost558@gmail.com" target="_blank">
+                            <MailOutlineIcon  className="Contact-form-icon" fontSize="large"/>
+                        </a>
                     </div>
                     <form onSubmit={sendEmail} className="Contact-form" >
                         <label>Name:</label>
-                        <input onChange={setname} value={name}  />
+                        <input onChange={setname} value={name} size="35" />
                         <br/>
                         <label>E-mail:</label>
                         <input onChange={setemail} value={email}/>

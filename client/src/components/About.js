@@ -14,7 +14,6 @@ function About() {
                         Driven by the desire to improve each day.
                         
                     </p>
-                    <button>Contact Me</button>
                 </div>
             </div>
         </div>
