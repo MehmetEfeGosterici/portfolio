@@ -1,7 +1,6 @@
 require("dotenv/config")
 express = require("express");
 nodemailer = require("nodemailer")
-sgTransport = require("nodemailer-s")
 const Data = require("./models/model")
 router = express.Router();
 
