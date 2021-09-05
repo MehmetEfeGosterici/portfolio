@@ -1,9 +1,11 @@
 .Project{
+    display: flex;
     background-color:#1f1f1f;
     z-index:1;
     margin: 20px;
     border-radius: 1rem;
     width:300px;
+    min-height: 360px;
     overflow: hidden;
     box-shadow: 5px 5px 10px 2px  #242424;;
 }
@@ -19,6 +21,7 @@
 .Project-text>h3{
     text-align: center;
     font-size: 1rem;
+    margin-bottom: -0px;
 }
 .Project-text>p{
     font-size: 16px;

@@ -43,16 +43,16 @@ function Contact() {
                     <h3>Contact Me</h3>
                     <div className="Contact-form-icons">
                         <a href="https://github.com/MehmetEfeGosterici" target="_blank">
-                            <GitHubIcon className="Contact-form-icon" fontSize="large" />
+                            <GitHubIcon className="Contact-form-icon" style={{ fontSize: 50}} />
                         </a>
                         <a href="https://www.linkedin.com/in/mehmet-efe-g%C3%B6sterici-5b15a8173/" target="_blank">
-                            <LinkedInIcon className="Contact-form-icon" fontSize="large"/>
+                            <LinkedInIcon className="Contact-form-icon" style={{ fontSize: 50}}/>
                         </a>
                         <a href="https://www.instagram.com/mehmetefegost/" target="_blank">
-                            <InstagramIcon className="Contact-form-icon" fontSize="large"/>
+                            <InstagramIcon className="Contact-form-icon" style={{ fontSize: 50}}/>
                         </a>
                         <a href="mailto:m.efegost558@gmail.com" target="_blank">
-                            <MailOutlineIcon  className="Contact-form-icon" fontSize="large"/>
+                            <MailOutlineIcon  className="Contact-form-icon" style={{ fontSize: 50}}/>
                         </a>
                     </div>
                     <form onSubmit={sendEmail} className="Contact-form" >
