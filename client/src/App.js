@@ -13,14 +13,14 @@ function App() {
       <Header/>
       <Body/>
     <Suspense fallback={""}>
-      <Canvas style={{position:"fixed" }}  >
+      <Canvas style={{position:"fixed"}}  >
         <Background />
       </Canvas>
-      <Canvas style={{ position:"relative", minHeight:"300vh"}} orthographic  >
+      <Canvas style={{ position:"relative", minHeight:"310%"}} orthographic  >
         <ambientLight/>
         <Sphere x={400} y={800} size={-200} rotspeed={0.004} map="moon.jpg"/>
       </Canvas> 
-      <Canvas style={{ height:"130%", overflow:"hidden" }} orthographic  >
+      <Canvas style={{ height:"100%" }} orthographic  >
         <ambientLight/>
         <Sphere x={-750} y={-200} size={-350} rotspeed={0.002} map="2k_jupiter.jpg"/>
       </Canvas> 
