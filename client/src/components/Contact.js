@@ -25,7 +25,7 @@ function Contact() {
 
     function sendEmail(e){
         e.preventDefault();
-        axios.post("http://localhost:5000/api/email",{
+        axios.post( "/api/email",{
             name: name,
             email: email,
             message: message
