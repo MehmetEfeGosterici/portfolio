@@ -7,7 +7,7 @@ router = express.Router();
 router.post("/email", (req,res)=>{
     const {name,email,message} = req.body
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'hotmail',
         auth: {
           user: process.env.EMAIL,
           pass: process.env.PASSWORD
